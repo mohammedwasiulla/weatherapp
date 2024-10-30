@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <video autoplay loop muted playsinline>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    
+    <div class="container">
+        <h1>Weather App</h1>
+
+        <!-- Input field and Get Weather button -->
+        <div class="search">
+            <input type="text" id="city" placeholder="Enter city name">
+            <button onclick="getWeather()">Get Weather</button>
+        </div>
+
+        <!-- Buttons for Location and Dark Mode -->
+        <div class="button-group">
+            <button onclick="getWeatherByLocation()">Get Weather by Location</button>
+            <button id="themeToggle">Toggle Dark Mode</button>
+        </div>
+
+        <!-- Weather Result Display -->
+        <div id="weatherResult">
+            <h2 id="cityName"></h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
