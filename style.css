@@ -3,7 +3,7 @@
 body {
     font-family: 'Arial', sans-serif;
     text-align: center;
-    background: url('backgroud.jpeg') no-repeat center center/cover; /* Responsive Background */
+    background: url('background.jpeg') no-repeat center center/cover; /* Responsive Background */
     color: #fff;
     display: flex;
     justify-content: center;
